@@ -1,0 +1,22 @@
+{
+  "name": "rive-webgl-advanced-api-basketball",
+  "version": "1.0.0",
+  "description": "Short example rendering a Rive animation with a low-level API setting up a render loop with the webgl-advanced runtime",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@rive-app/webgl-advanced": "1.2.1",
+    "parcel-bundler": "^1.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "typescript": "4.4.4"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": []
+}
