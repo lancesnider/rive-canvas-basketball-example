@@ -967,15 +967,20 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@rive-app/canvas-advanced@^2.21.3":
-  version "2.21.3"
-  resolved "https://registry.yarnpkg.com/@rive-app/canvas-advanced/-/canvas-advanced-2.21.3.tgz#456bc35443f8ca25d7d2c83df916b7c79f6828b0"
-  integrity sha512-Dpm99hFtEkTrrDMzAvDX3V/KhgQhiyFPJYWvursM055trnG1BtCchUjFa+OqRzLLgY0Z+kVlWsDkMDNm8uQ7qg==
+"@rive-app/canvas-advanced@2.17.3":
+  version "2.17.3"
+  resolved "https://registry.yarnpkg.com/@rive-app/canvas-advanced/-/canvas-advanced-2.17.3.tgz#bbf82680b878b848784c80640caeaf4ea5e3dfe4"
+  integrity sha512-o+BKcO/v505kAXQ/KxdWVeOAAVuGrOHuEGHNA/AM4n+gJd9i6OcAnh3f5qDn6QVxJkkd142NBBbu3WP50SsDAQ==
 
-"@rive-app/webgl-advanced@^2.21.3":
+"@rive-app/webgl-advanced@2.17.3":
+  version "2.17.3"
+  resolved "https://registry.yarnpkg.com/@rive-app/webgl-advanced/-/webgl-advanced-2.17.3.tgz#c0333c536095db61e2894dd5debed3ec37d85077"
+  integrity sha512-/t0lQ31OkKt1JnTOrTijr+Q0/EmZhQ6tq8QEeNwPZFJNUEvcUR+hH0W9fNABKRCpx1RVqZWDnHeBShfBZtOHYg==
+
+"@rive-app/webgl2-advanced@^2.21.3":
   version "2.21.3"
-  resolved "https://registry.yarnpkg.com/@rive-app/webgl-advanced/-/webgl-advanced-2.21.3.tgz#483e7ab3d36a9e76faf12b6131a350634b1bbed9"
-  integrity sha512-3ejdCLwZdG/sT/GSFfLejj4W5LtsBYG/rggTGR8c6yBrcloxoOToTdcHUDn1A+Nd+g0iF7sTfl/DblYWC4ocsA==
+  resolved "https://registry.yarnpkg.com/@rive-app/webgl2-advanced/-/webgl2-advanced-2.21.3.tgz#ee94af828f2b473a232718b52251d3133cc3ec88"
+  integrity sha512-d5rjZAyqFI+CX55H1DQ65eIFdPkuKIcFgLMZV9PSTGKmSToE1SJwlkYLSjODw2g2XQob5aScLb+ZXeSJJIK7Tw==
 
 "@types/q@^1.5.1":
   version "1.5.8"
