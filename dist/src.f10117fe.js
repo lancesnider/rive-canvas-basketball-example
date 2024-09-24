@@ -5269,7 +5269,7 @@ function main() {
           return [4 /*yield*/, (0, webgl_advanced_1.default)({
             // Loads Wasm bundle
             locateFile: function locateFile(_) {
-              return "https://unpkg.com/@rive-app/canvas-advanced@2.10.4/rive.wasm";
+              return "\u200Bhttps://unpkg.com/@rive-app/canvas-advanced@2.17.3/rive.wasm";
             }
           })];
         case 1:
@@ -5321,7 +5321,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50110" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58623" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

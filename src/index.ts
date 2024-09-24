@@ -5,7 +5,7 @@ async function main() {
   const rive = await RiveWebGL({
     // Loads Wasm bundle
     locateFile: (_) =>
-      `https://unpkg.com/@rive-app/canvas-advanced@2.10.4/rive.wasm`,
+      `​https://unpkg.com/@rive-app/canvas-advanced@2.17.3/rive.wasm`,
   })
 
   const canvas = document.getElementById('rive-canvas') as HTMLCanvasElement
