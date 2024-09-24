@@ -1,52 +1,51 @@
-import "./styles.css";
-import RiveWebGL, { File } from "@rive-app/webgl-advanced";
+import './styles.css'
+import RiveWebGL, { File } from '@rive-app/webgl-advanced'
 
 async function main() {
   const rive = await RiveWebGL({
     // Loads Wasm bundle
     locateFile: (_) =>
-      `https://unpkg.com/@rive-app/webgl-advanced@1.2.1/rive.wasm`
-  });
-  const canvas = document.getElementById("rive-canvas") as HTMLCanvasElement;
-  canvas.height = 400;
-  canvas.width = 500;
+      `https://unpkg.com/@rive-app/canvas-advanced@2.10.4/rive.wasm`,
+  })
 
-  const renderer = rive.makeRenderer(canvas, true);
-  const bytes = await (
-    await fetch(new Request("basketball.riv"))
-  ).arrayBuffer();
-  const file = (await rive.load(new Uint8Array(bytes))) as File;
-  const artboard = file.defaultArtboard();
+  const canvas = document.getElementById('rive-canvas') as HTMLCanvasElement
+  canvas.height = 400
+  canvas.width = 500
+
+  const renderer = rive.makeRenderer(canvas, true)
+  const bytes = await (await fetch(new Request('basketball.riv'))).arrayBuffer()
+  const file = (await rive.load(new Uint8Array(bytes))) as File
+  const artboard = file.defaultArtboard()
   let animation = new rive.LinearAnimationInstance(
     artboard.animationByIndex(0),
     artboard
-  );
+  )
 
-  let lastTime = 0;
+  let lastTime = 0
 
   function renderLoop(time) {
     if (!lastTime) {
-      lastTime = time;
+      lastTime = time
     }
-    const elapsedTimeMs = time - lastTime;
-    const elapsedTimeSec = elapsedTimeMs / 1000;
-    lastTime = time;
+    const elapsedTimeMs = time - lastTime
+    const elapsedTimeSec = elapsedTimeMs / 1000
+    lastTime = time
 
-    renderer.clear();
+    renderer.clear()
     if (artboard) {
       if (animation) {
-        animation.advance(elapsedTimeSec);
-        animation.apply(1);
+        animation.advance(elapsedTimeSec)
+        animation.apply(1)
       }
-      artboard.advance(elapsedTimeSec);
-      renderer.save();
-      artboard.draw(renderer);
-      renderer.restore();
+      artboard.advance(elapsedTimeSec)
+      renderer.save()
+      artboard.draw(renderer)
+      renderer.restore()
     }
-    renderer.flush();
-    rive.requestAnimationFrame(renderLoop);
+    renderer.flush()
+    rive.requestAnimationFrame(renderLoop)
   }
-  rive.requestAnimationFrame(renderLoop);
+  rive.requestAnimationFrame(renderLoop)
 }
 
-main();
+main()

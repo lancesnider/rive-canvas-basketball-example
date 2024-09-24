@@ -8,7 +8,8 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@rive-app/webgl-advanced": "1.2.1",
+    "@rive-app/canvas-advanced": "^2.21.3",
+    "@rive-app/webgl-advanced": "^2.21.3",
     "parcel-bundler": "^1.6.1"
   },
   "devDependencies": {

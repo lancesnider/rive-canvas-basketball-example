@@ -1,0 +1,14 @@
+body {
+  font-family: sans-serif;
+}
+
+.rive-container-webgl canvas {
+  background-color: red;
+}
+
+.rive-container-canvas canvas {
+  background-color: red;
+}
+
+
+/*# sourceMappingURL=/src.f10117fe.css.map */
