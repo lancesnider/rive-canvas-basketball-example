@@ -8,7 +8,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@rive-app/webgl2-advanced": "^2.21.3",
+    "@rive-app/webgl2-advanced": "2.21.3",
     "parcel-bundler": "^1.6.1"
   },
   "devDependencies": {

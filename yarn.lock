@@ -967,7 +967,7 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@rive-app/webgl2-advanced@^2.21.3":
+"@rive-app/webgl2-advanced@2.21.3":
   version "2.21.3"
   resolved "https://registry.yarnpkg.com/@rive-app/webgl2-advanced/-/webgl2-advanced-2.21.3.tgz#ee94af828f2b473a232718b52251d3133cc3ec88"
   integrity sha512-d5rjZAyqFI+CX55H1DQ65eIFdPkuKIcFgLMZV9PSTGKmSToE1SJwlkYLSjODw2g2XQob5aScLb+ZXeSJJIK7Tw==
