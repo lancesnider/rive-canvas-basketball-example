@@ -4655,7 +4655,7 @@ function main() {
           canvas.height = 400;
           canvas.width = 500;
           renderer = rive.makeRenderer(canvas, true);
-          return [4 /*yield*/, fetch(new Request('basketball.riv'))];
+          return [4 /*yield*/, fetch(new Request('./basketball.riv'))];
         case 2:
           return [4 /*yield*/, _a.sent().arrayBuffer()];
         case 3:
@@ -4698,7 +4698,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57496" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51510" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

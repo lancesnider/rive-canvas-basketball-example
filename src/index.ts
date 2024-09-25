@@ -13,7 +13,9 @@ async function main() {
   canvas.width = 500
 
   const renderer = rive.makeRenderer(canvas, true)
-  const bytes = await (await fetch(new Request('basketball.riv'))).arrayBuffer()
+  const bytes = await (
+    await fetch(new Request('./basketball.riv'))
+  ).arrayBuffer()
   const file = (await rive.load(new Uint8Array(bytes))) as File
   const artboard = file.defaultArtboard()
   let animation = new rive.LinearAnimationInstance(
