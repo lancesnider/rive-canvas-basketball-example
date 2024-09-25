@@ -1,11 +1,11 @@
 import './styles.css'
-import RiveWebGL, { File } from '@rive-app/webgl2-advanced'
+import RiveWebGL, { File } from '@rive-app/canvas-advanced'
 
 async function main() {
   const rive = await RiveWebGL({
     // Loads Wasm bundle
     locateFile: (_) =>
-      `https://unpkg.com/@rive-app/webgl2-advanced@2.21.3/rive.wasm`,
+      `https://unpkg.com/@rive-app/canvas-advanced@2.21.3/rive.wasm`,
   })
 
   const canvas = document.getElementById('rive-canvas') as HTMLCanvasElement

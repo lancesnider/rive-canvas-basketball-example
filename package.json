@@ -4,10 +4,12 @@
   "description": "Short example rendering a Rive animation with a low-level API setting up a render loop with the webgl-advanced runtime",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "start": "yarn copy-assets && parcel index.html --open",
+    "copy-assets": "cp -r static/* dist",
+    "build": "yarn copy-assets && parcel build index.html"
   },
   "dependencies": {
+    "@rive-app/canvas-advanced": "^2.21.3",
     "@rive-app/webgl2-advanced": "2.21.3",
     "parcel-bundler": "^1.6.1"
   },

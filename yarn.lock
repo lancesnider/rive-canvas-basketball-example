@@ -967,6 +967,11 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
+"@rive-app/canvas-advanced@^2.21.3":
+  version "2.21.3"
+  resolved "https://registry.yarnpkg.com/@rive-app/canvas-advanced/-/canvas-advanced-2.21.3.tgz#456bc35443f8ca25d7d2c83df916b7c79f6828b0"
+  integrity sha512-Dpm99hFtEkTrrDMzAvDX3V/KhgQhiyFPJYWvursM055trnG1BtCchUjFa+OqRzLLgY0Z+kVlWsDkMDNm8uQ7qg==
+
 "@rive-app/webgl2-advanced@2.21.3":
   version "2.21.3"
   resolved "https://registry.yarnpkg.com/@rive-app/webgl2-advanced/-/webgl2-advanced-2.21.3.tgz#ee94af828f2b473a232718b52251d3133cc3ec88"
